@@ -276,3 +276,19 @@ a {
 }
 .card__body {
 }
+
+/* plans */
+.plan__name{
+  margin: 0;
+  color: #fff;
+  font-weight: 100;
+}
+.plan__price{
+  font-size: 40px
+}
+.plan__billing-cycle, .plan__description{
+font-size: 20px;
+}
+.plan__badge {
+  background-color: rgba(10, 206, 206, 0.767);
+}
