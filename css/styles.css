@@ -106,6 +106,30 @@ a {
 .badge--small {
   font-size: 1.6rem;
 }
+.badge__popular {
+  background: var(--color-heading);
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  height: 3rem;
+  line-height: 2rem;
+  padding: 0.5rem;
+  position: absolute;
+  right: 5%;
+  top: 11%;
+  transform: rotate(90deg);
+  width: 7rem;
+}
+.badge__popular::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 0;
+  border: 1.5rem solid;
+  border-color: var(--color-heading) var(--color-secondary) var(--color-heading)
+    var(--color-heading);
+}
 @media screen and (min-width: 1024px) {
   .badge {
     font-size: 1.5rem;
@@ -265,6 +289,7 @@ a {
 .card__header,
 .card__body {
   padding: 2rem 3rem;
+  position: relative;
 }
 .card--primary .card__header {
   color: #fff;
@@ -278,17 +303,19 @@ a {
 }
 
 /* plans */
-.plan__name{
+.plan__name {
   margin: 0;
   color: #fff;
   font-weight: 100;
 }
-.plan__price{
-  font-size: 40px
+.plan__price {
+  font-size: 40px;
 }
-.plan__billing-cycle, .plan__description{
-font-size: 20px;
+.plan__billing-cycle,
+.plan__description {
+  font-size: 20px;
 }
 .plan__badge {
   background-color: rgba(10, 206, 206, 0.767);
 }
+
